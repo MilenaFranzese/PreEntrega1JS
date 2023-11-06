@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Volar">
+    <meta name="keywords" content="volar, vuelo libre, parapente, trike, paracaidismo, curso de vuelo">
+    <!-- inicia bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <!-- fin bootstrap -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./multimedia/plane-png.png">
+    <title>Guarida de Lobos</title>
+</head>
+<body>
+    <header>
+        <!-- inicia navbar -->
+        <nav class="navbar navbar-expand-md">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="./multimedia/guarida-de-lobos-logo-png.png" alt="Logo" style="width:75px;">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon">
+                        <i class="fa-solid fa-bars"></i>
+                    </span>
+                </button>
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a  href="index.html" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a href="./pages/nosotros.html" class="nav-link">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./pages/quierovolar.html" class="nav-link">Quiero volar</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./pages/condiciones.html" class="nav-link">Condiciones</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./pages/contacto.html" class="nav-link">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- fin navbar -->
+    </header>
+    <main class="titulo">
+        <div class="call">
+            <h1> <span>Bienvenido a </span> <br> Guarida de Lobos </h1>
+        </div>
+    </main>
+    <section class="segundaseccion">
+        <div class="segundaseccion2">
+            <div class="aventura">
+                <h2>Donde la aventura <br> nunca termina</h2>
+                <h3>Viví una experiencia única</h3>
+                <p class="info">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis consectetur eligendi nobis pariatur nulla. Molestias necessitatibus maxime in debitis rem voluptatibus consectetur sint dolor magnam doloribus dolore tempora incidunt, quia vel laboriosam itaque iure rerum sit iusto ab est quas quidem similique. Accusamus dolores, mollitia eius animi, odio velit ratione fugit totam illum, porro eum. Harum, sint. Aperiam quo est maiores eligendi maxime corrupti laborum perspiciatis doloremque, incidunt ab dicta! Sit consequuntur eum soluta cumque voluptatem, similique, laudantium odio molestiae quaerat cum impedit pariatur itaque excepturi explicabo quod iure dolorem debitis fugit repellat porro, voluptate corrupti? Quia veritatis laborum odit.
+                </p>
+            </div>
+            <div class="imagenes">
+                <img id="parapente" src="./multimedia/parapente-naranja.jpg" alt="foto parapente">
+            </div>
+        </div>
+    </section>
+    <section class="galeria">
+        <div class="container">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./multimedia/foto1.jpg" class="d-block w-100" alt="foto volando">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./multimedia/foto6.jpg" class="d-block w-100" alt="foto volando">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./multimedia/foto2.jpg" class="d-block w-100" alt="foto volando">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./multimedia/foto5.jpg" class="d-block w-100" alt="foto volando">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./multimedia/foto3.jpg" class="d-block w-100" alt="foto volando">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./multimedia/foto4.jpg" class="d-block w-100" alt="foto volando">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-target="#carouselExampleIndicators" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-target="#carouselExampleIndicators" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p id="footer">Todos los derechos reservados - Proyecto Coderhouse</p>
+        <div class="redes">
+            <a href="https://www.instagram.com/guaridadelobos/">
+                <i class="fa-brands fa-instagram"> </i>
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=100044947973965">
+                <i class="fa-brands fa-square-facebook"> </i>
+            </a>
+            <a href="https://www.youtube.com/channel/UC1-6Jb8yQWcKQLz3WEFk4Pg">
+                <i class="fa-brands fa-youtube"></i>
+            </a>
+        </div>
+    </footer>
+    <div class="subir">
+        <a href="#" class="subir">
+            <i class="fa-solid fa-chevron-up"></i>
+        </a>
+    </div>
+
+<!-- bootstrap inicia -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+    <!-- bootstrap fin -->
+
+    <script src="/js/app.js" async></script>
+</body>
+</html>

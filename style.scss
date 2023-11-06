@@ -1,0 +1,550 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato&family=Roboto:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,400&family=Rubik+Mono+One&display=swap');
+@import url('http://fonts.cdnfonts.com/css/gang-wolfik-craze');
+@import url('https://fonts.cdnfonts.com/css/cleanwork');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&display=swap');
+
+/* font-family: 'Bebas Neue', sans-serif;
+font-family: 'Lato', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Rubik Mono One', sans-serif;
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'PT Sans', sans-serif;
+*/
+
+// fuentes
+$fuente1: 'Bebas Neue', sans-serif;
+$fuente2: 'Lato', sans-serif;;
+$fuente3: 'Roboto', sans-serif;
+$fuente4: 'Rubik Mono One', sans-serif;
+$fuente5: 'Josefin Sans', sans-serif;
+$fuente6: 'Poppins', sans-serif;
+$fuente7: 'PT Sans', sans-serif;
+$fuente8: 'Gang Wolfik Craze', sans-serif;
+$fuente9: 'Cleanwork', sans-serif;
+$fuente10: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+// titulos
+$titulo1: 4px;
+$titulo2: 5px;
+$titulo3: 10px;
+$titulo4: 15px;
+$titulo5: 18px;
+$titulo6: 20px;
+$titulo7: 22px;
+$titulo8: 25px;
+$titulo9: 30px;
+$titulo10: 40px;
+$titulo11: 48px;
+$titulo12: 50px;
+$titulo13: 60px;
+$titulo14: 100px;
+$titulo15: 200px;
+$titulo16: 400px;
+$titulo17: 460px;
+$titulo18: 500px;
+
+// colores
+$color1: black;
+$color2: white;
+$color3: orange;
+$color4: orangered;
+$color5: rgb(68, 68, 71);
+$color6: #222324;
+$color7: rgba(194, 187, 187, 0.829);
+
+// shadows
+$shadow1: 0 0 5px black;
+$shadow2: 4px 4px 15px rgb(0, 0, 0);
+$shadow3: 5px 2px 10px rgba(170, 167, 167, 0.432);
+$shadow4: 2px 2px 3px rgb(102, 97, 97);
+$shadow5: 8px 8px 15px black;
+
+// bordes
+$borde1: 3px solid black;
+$borde2: 30px 0px 30px 0px;
+$borde3: 26px 0px 0px 0px;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    overflow-x: hidden;
+    }
+
+// inicio navbar
+header{
+    background-color: $color3;
+    width: 100%;
+    font-size: $titulo5;
+    justify-content: space-between;
+    font-family: $fuente10;
+}
+
+li a:hover{
+    color: $color2;
+}
+
+.navbar-brand{
+    cursor: pointer;
+}
+
+.nav-link{
+    text-decoration: none;
+    color: $color1;
+    font-size: $titulo7;
+    margin-right: $titulo4;
+    font-weight: 500;
+}
+// fin navbar
+
+// inicio main titulo
+.titulo{
+    height: calc(100vh - 80px);
+    width: 100%;
+    background-image: url(.//multimedia/aladelta.jpg);
+    background-color: $color1;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.call{
+    font-size: $titulo10 ;
+    font-family: $fuente8;
+}
+
+h1{
+    padding: $titulo6;
+    opacity: 70%;
+    font-family: $fuente9 ;
+    float: left;
+    float: inline-start;
+}
+
+span{
+    color: $color5;
+}
+// fin main titulo
+
+// inicia segunda seccion
+.segundaseccion{
+    background-color: $color6;
+}
+
+#parapente{
+    width: 90%;
+}
+
+@mixin style ($color, $fontsize){
+    color: $color;
+    font-size: $fontsize;
+}
+
+h2{
+    @include style(orangered, 40px);
+    font-family: $fuente10;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+h3{
+    @include style(white, 20px);
+    font-family: $fuente10;
+    text-transform: uppercase;
+    font-weight: 200;
+    text-align: left;
+    font-weight: 500;
+    padding-top: $titulo3;
+}
+
+.info{
+    font-family: $fuente10;
+    font-size: $titulo4;
+    color: $color2;
+    font-weight: 100;
+    margin: 0px 0px 0px 10px;
+}
+
+.imagenes{
+    padding: 30px 0px 20px 50px;
+}
+.aventura{
+    padding: 30px 0px 20px 50px;
+}
+
+.galeria{
+    background-color: $color6;
+    padding-bottom: $titulo4;
+}
+// fin segunda seccion
+
+/* inicio footer y boton subir */
+footer{
+    background-color: $color1;
+    color: $color7;
+    text-align: center;
+    font-size: $titulo7;
+    padding-top: $titulo3;
+}
+
+.redes a{
+    font-size: $titulo12;
+    color: $color4;
+    text-decoration: none;
+}
+
+.redes i{
+    letter-spacing: $titulo9;
+}
+
+.subir{
+    height: $titulo10;
+    width: $titulo10;
+    background-color: $color3;
+    color: $color1;
+    position: fixed;
+    right: $titulo10;
+    bottom: $titulo10;
+    text-align: center;
+    line-height: $titulo11;
+    font-size: $titulo9;
+    box-shadow: $shadow1;
+}
+
+/* fin footer y boton subir */
+
+// inicia nosotros
+.nosotros{
+    background-image: none;
+    background-color: $color6;
+    display: grid;
+}
+
+.quierovolar{
+    background-image: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.condiciones{
+    background-image: none;
+    background-color: $color6;
+}
+.card{
+    height: $titulo16;
+    background-color: $color4;
+    border: $borde1;
+    border-radius: $borde2;
+    box-shadow: $shadow2;
+}
+
+.card:hover{
+    transform: scale(1.04);
+    transition: 1s;
+    box-shadow: $shadow3;
+}
+
+.card-img{
+    background-image: url(./multimedia/trike.jpg);
+    height: $titulo15;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    padding-top: $titulo15;
+    border-radius: 26px 0px 0px 0px;
+    text-align: center;
+}
+
+.card-img a:hover{
+    color: $color1;
+}
+
+.card-img2 a:hover{
+    color: $color1;
+}
+
+.card-img3 a:hover{
+    color: $color1;
+}
+
+.card-img2{
+    background-image: url(./multimedia/parapente3.jpg);
+    height: $titulo15;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    padding-top: $titulo15;
+    border-radius: 26px 0px 0px 0px;
+    text-align: center;
+}
+
+.card-img3{
+    background-image: url(./multimedia/paracaidismo3.jpg);
+    height: $titulo15;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    padding-top: $titulo15;
+    border-radius: 26px 0px 0px 0px;
+    text-align: center;
+}
+
+.card-img4{
+    background-image: url(./multimedia/paramotor.jpg);
+    height: $titulo15;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    padding-top: $titulo15;
+    border-radius: $borde3;
+    text-align: center;
+}
+
+.card p{
+    text-align: justify;
+    padding: 5px 10px 0px 10px ;
+}
+
+.boton{
+    color: $color2;
+    background-color: $color3;
+    padding: 4px 6px;
+    text-align: center;
+    border-radius: $titulo1;
+    font-family: $fuente6;
+    font-size: $titulo6;
+    text-decoration: none;
+}
+
+.titulocard{
+    font-size: $titulo8;
+    margin: $titulo3;
+    text-shadow: $shadow4;
+}
+// fin nosotros
+
+// inicia quiero volar
+.quierovolar{
+    height: calc(100vh - 80px);
+}
+
+.video{
+    width: 100%;
+    height: 120vh;
+    display: flex;
+    position: absolute;
+    z-index: -1;
+    object-position: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+.card-b{
+    /* width: 20%;
+    height: 80px; */
+    background-color: $color4;
+    /* border: 3px solid black; */
+    border-radius: $titulo4;
+    box-shadow: $shadow5;
+    justify-content: center;
+    text-align: center;
+    padding: $titulo4;
+    margin: $titulo6;
+}
+
+.boton2{
+    color: $color2;
+    padding: 4px 6px;
+    text-align: center;
+    border-radius: $titulo1;
+    font-family: $fuente6;
+    font-size: $titulo7;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.card-b a:hover{
+    color: $color1;
+    text-decoration: none;
+}
+
+.card-b:hover{
+    transform: scale(1.4);
+    transition: 1s;
+}
+// fin quiero volar
+
+// inicia condiciones
+.card-clima{
+    background-color: $color4;
+    text-align: center;
+    padding: $titulo2;
+    margin-bottom: $titulo4;
+}
+
+.card-clima a{
+    justify-content: space-between;
+    color: $color2;
+    text-decoration: none;
+    font-family: $fuente6;
+    font-size: $titulo6;
+    text-align: center;
+}
+
+.card-clima a:hover{
+    color: $color1;
+}
+
+.formato-dif{
+    font-family: $fuente10;
+    font-size: $titulo10;
+    text-transform: uppercase;
+    color: $color4;
+    margin: 15px 0px 15px 0px;
+}
+
+#clima{
+    padding: 20px 0px 20px 0px;
+    text-transform: uppercase;
+    color: $color4;
+}
+
+.condiciones{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#m-booked-weather-bl250-97588{
+    padding-bottom: $titulo6;
+}
+// fin condiciones
+
+// inicia contacto
+.contacto{
+    background-image: none;
+    background-color: $color6;
+}
+
+.contacto2{
+    padding: 5px 0px 5px 8px;
+}
+
+h5{
+    text-align: left;
+    font-size: larger;
+    font-weight: bold;
+    font-family: $fuente10;
+    color: $color2;
+    font-size: $titulo9;
+}
+
+h6{
+    font-size: medium;
+    color: $color2;
+    padding: 10px 0px 10px 0px;
+    font-family: $fuente10;
+}
+
+.mapas{
+    font-size: large;
+}
+// fin contacto
+
+/* media query inicia */
+
+@media only screen and (min-width:320px){
+    .nosotros{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+    .card{
+        height: 500px;
+        margin: 10px 30px 10px 30px;
+    }
+    .segundaseccion2{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+    }
+    .botonesvuelo{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+    }}
+
+@media only screen and (min-width:480px){
+    .nosotros{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+    .card{
+        height: 500px;
+        margin: 15px 60px 15px 60px;
+    }
+}
+
+    @media only screen and (min-width:700px) and (max-width:1024px){
+        .nosotros{
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+        }
+
+        .card{
+            margin: 10px 20px 10px 20px;
+            height: 500px;
+            margin: 15px 30px 15px 30px;
+        }
+        .segundaseccion2{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: 1fr;
+        }
+        .botonesvuelo{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: 1fr;
+        }
+        .card-b{
+            margin: 50px;
+        }
+    }
+
+    @media only screen and (min-width:1024px){
+        h1{
+            font-size: 100px;
+        }
+
+        .nosotros{
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: 1fr;
+        }
+
+        .card{
+            margin: 15px;
+            height: 550px;
+        }
+        .segundaseccion2{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: 1fr;
+        }
+        .botonesvuelo{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: 1fr;
+        }
+        .card-b{
+            margin: 60px;
+        }
+    }
+/* media query fin */
