@@ -76,3 +76,8 @@ cursosArray.forEach(function(cursos) {
     console.log("Precio: $" + cursos.precio2);
     console.log("-------------");
 });
+
+const nombresCursos = ["aladelta", "parapente", "paracaidismo", "paramotor"]
+
+nombresCursos.pop()
+console.log("Por falta de instructor solamente se estarán dictando los cursos y experiencias detallados: " + nombresCursos)
